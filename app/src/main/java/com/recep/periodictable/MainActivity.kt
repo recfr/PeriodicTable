@@ -1,18 +1,25 @@
 package com.recep.periodictable
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.recep.periodictable.data.ElementList
-import com.recep.periodictable.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+//    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        binding.recyclerView.adapter = ElementAdapter(ElementList.generateData())
+//        binding.recyclerView.adapter = ElementAdapter(ElementList.generateData())
+//        binding.recyclerView.layoutManager = GridLayoutManager(this,5)
+
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+
+        recyclerView.setHasFixedSize(true)
+        recyclerView.adapter = ElementAdapter(ElementList().generateData())
+        recyclerView.layoutManager = GridLayoutManager(this, 7, RecyclerView.HORIZONTAL, false)
     }
 }

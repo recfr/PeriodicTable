@@ -9,15 +9,16 @@ data class ElementModel(
 )
 
 enum class ElementType() {
-    YARIMETAL,
-    AMETAL,
     ALKALI_METAL,
     TOPRAK_ALKALI_METAL,
-    YARI_METAL,
     GECIS_METALLERI,
+    ZAYIF_METALLER,
+    YARI_METAL,
+
+    AMETAL,
     HALOJENLER,
     SOYGAZ,
-    SUPERAKTINITLER,
     LANTANITLER,
-    AKTINITLER
+    AKTINITLER,
+    NONE
 }

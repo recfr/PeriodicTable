@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="symbol_textsize">24sp</dimen>
-    <dimen name="name_textsize">8sp</dimen>
+    <dimen name="name_textsize">12sp</dimen>
 </resources>
