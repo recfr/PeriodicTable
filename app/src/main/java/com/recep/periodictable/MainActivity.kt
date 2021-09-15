@@ -15,9 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        binding.recyclerView.adapter = ElementAdapter(ElementList.generateData())
-//        binding.recyclerView.layoutManager = GridLayoutManager(this,5)
-
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
         recyclerView.setHasFixedSize(true)
