@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = ElementAdapter(ElementList().generateData())
-        recyclerView.layoutManager = GridLayoutManager(this, 7, RecyclerView.HORIZONTAL, false)
+//        recyclerView.layoutManager = GridLayoutManager(this, 7, RecyclerView.HORIZONTAL, false)
+        recyclerView.layoutManager = GridLayoutManager(this, 9, RecyclerView.HORIZONTAL, false)
     }
 }

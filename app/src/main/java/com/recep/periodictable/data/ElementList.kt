@@ -1,5 +1,6 @@
 package com.recep.periodictable.data
 
+import android.sax.Element
 import com.recep.periodictable.model.ElementModel
 import com.recep.periodictable.model.ElementType
 
@@ -7,7 +8,7 @@ class ElementList {
     fun generateData(): List<ElementModel> {
         val elementList = arrayListOf<ElementModel>()
 
-        val none = ElementModel("", "","", false, ElementType.NONE)
+        val none = ElementModel("", "", "", false, ElementType.NONE)
         val hydrogen = ElementModel("H", "Hydrogen", "1", false, ElementType.NON_METAL)
         val lithium = ElementModel("Li", "Lithium", "3", false, ElementType.ALKALI_METAL)
         val sodium = ElementModel("Na", "Sodium", "11", false, ElementType.ALKALI_METAL)
@@ -116,6 +117,43 @@ class ElementList {
         val radon = ElementModel("Rn", "Radon", "86", true, ElementType.NOBLE_GAS)
         val oganesson = ElementModel("Og", "Oganesson", "118", true, ElementType.NOBLE_GAS)
 
+        /**
+         * lanthanides
+         */
+        val lanthanum = ElementModel("La", "Lanthanum", "57", false, ElementType.LANTHANIDE)
+        val cerium = ElementModel("Ce", "Cerium", "58", false, ElementType.LANTHANIDE)
+        val praseodymium = ElementModel("Pr", "Praseodymium", "59", false, ElementType.LANTHANIDE)
+        val neodymium = ElementModel("Nd", "Neodymium", "60", false, ElementType.LANTHANIDE)
+        val promethium = ElementModel("Pm", "Promethium", "61", true, ElementType.LANTHANIDE)
+        val samarium = ElementModel("Sm", "Samarium", "62", false, ElementType.LANTHANIDE)
+        val europium = ElementModel("Eu", "Europium", "63", false, ElementType.LANTHANIDE)
+        val gadolinium = ElementModel("Gd", "Gadolinium", "64", false, ElementType.LANTHANIDE)
+        val terbium = ElementModel("Tb", "Terbium", "65", false, ElementType.LANTHANIDE)
+        val dysprosium = ElementModel("Dy", "Dysprosium", "66", false, ElementType.LANTHANIDE)
+        val holmium = ElementModel("Ho", "Holmium", "67", false, ElementType.LANTHANIDE)
+        val erbium = ElementModel("Er", "Erbium", "68", false, ElementType.LANTHANIDE)
+        val thulium = ElementModel("Tm", "Thulium", "69", false, ElementType.LANTHANIDE)
+        val ytterbium = ElementModel("Tb", "Ytterbium", "70", false, ElementType.LANTHANIDE)
+        val lutetium = ElementModel("Lu", "Lutetium", "71", false, ElementType.LANTHANIDE)
+
+        /**
+         * actinides
+         */
+        val actinium = ElementModel("Ac", "Actinium", "89", true, ElementType.ACTINIDE)
+        val thorium = ElementModel("Th", "Thorium", "90", true, ElementType.ACTINIDE)
+        val protactinium = ElementModel("Pa", "Protactinium", "91", true, ElementType.ACTINIDE)
+        val uranium = ElementModel("U", "Uranium", "92", true, ElementType.ACTINIDE)
+        val neptunium = ElementModel("Np", "Neptunium", "93", true, ElementType.ACTINIDE)
+        val plutonium = ElementModel("Pu", "Plutonium", "94", true, ElementType.ACTINIDE)
+        val americium = ElementModel("Am", "Americium", "95", true, ElementType.ACTINIDE)
+        val curium = ElementModel("Cm", "Curium", "96", true, ElementType.ACTINIDE)
+        val berkelium = ElementModel("Bk", "Berkelium", "97", true, ElementType.ACTINIDE)
+        val californium = ElementModel("Cf", "Californium", "98", true, ElementType.ACTINIDE)
+        val einsteinium = ElementModel("Es", "Einsteinium", "99", true, ElementType.ACTINIDE)
+        val fermium = ElementModel("Fm", "Fermium", "100", true, ElementType.ACTINIDE)
+        val mendelevium = ElementModel("Md", "Mendelevium", "101", true, ElementType.ACTINIDE)
+        val nobelium = ElementModel("No", "Nobelium", "102", true, ElementType.ACTINIDE)
+        val lawrencium = ElementModel("Lr", "Lawrencium", "103", true, ElementType.ACTINIDE)
 
         elementList.add(hydrogen)
         elementList.add(lithium)
@@ -124,6 +162,8 @@ class ElementList {
         elementList.add(rubidium)
         elementList.add(caesium)
         elementList.add(francium)
+        elementList.add(none)
+        elementList.add(none)
 
         elementList.add(none)
         elementList.add(beryllium)
@@ -132,6 +172,8 @@ class ElementList {
         elementList.add(strontium)
         elementList.add(barium)
         elementList.add(radium)
+        elementList.add(none)
+        elementList.add(none)
 
         elementList.add(none)
         elementList.add(none)
@@ -140,6 +182,9 @@ class ElementList {
         elementList.add(yttrium)
         elementList.add(lanthanide)
         elementList.add(actinide)
+        elementList.add(none)
+        elementList.add(lanthanum)
+
 
         elementList.add(none)
         elementList.add(none)
@@ -148,6 +193,8 @@ class ElementList {
         elementList.add(zirconium)
         elementList.add(hafnium)
         elementList.add(rutherfordium)
+        elementList.add(none)
+        elementList.add(cerium)
 
         elementList.add(none)
         elementList.add(none)
@@ -156,6 +203,9 @@ class ElementList {
         elementList.add(niobium)
         elementList.add(tantalum)
         elementList.add(dubnium)
+        elementList.add(none)
+        elementList.add(praseodymium)
+
 
         elementList.add(none)
         elementList.add(none)
@@ -164,6 +214,8 @@ class ElementList {
         elementList.add(molybdenum)
         elementList.add(tungsten)
         elementList.add(seaborgium)
+        elementList.add(none)
+        elementList.add(neodymium)
 
         elementList.add(none)
         elementList.add(none)
@@ -172,6 +224,8 @@ class ElementList {
         elementList.add(technetium)
         elementList.add(rhenium)
         elementList.add(bohrium)
+        elementList.add(none)
+        elementList.add(promethium)
 
         elementList.add(none)
         elementList.add(none)
@@ -180,6 +234,8 @@ class ElementList {
         elementList.add(ruthenium)
         elementList.add(osmium)
         elementList.add(hassium)
+        elementList.add(none)
+        elementList.add(samarium)
 
         elementList.add(none)
         elementList.add(none)
@@ -188,6 +244,8 @@ class ElementList {
         elementList.add(rhodium)
         elementList.add(iridium)
         elementList.add(meitnerium)
+        elementList.add(none)
+        elementList.add(europium)
 
         elementList.add(none)
         elementList.add(none)
@@ -196,6 +254,8 @@ class ElementList {
         elementList.add(palladium)
         elementList.add(platinum)
         elementList.add(darmstadtium)
+        elementList.add(none)
+        elementList.add(gadolinium)
 
         elementList.add(none)
         elementList.add(none)
@@ -204,6 +264,8 @@ class ElementList {
         elementList.add(silver)
         elementList.add(gold)
         elementList.add(roentgenium)
+        elementList.add(none)
+        elementList.add(terbium)
 
         elementList.add(none)
         elementList.add(none)
@@ -212,6 +274,8 @@ class ElementList {
         elementList.add(cadmium)
         elementList.add(mercury)
         elementList.add(copernicium)
+        elementList.add(none)
+        elementList.add(dysprosium)
 
         elementList.add(none)
         elementList.add(boron)
@@ -220,6 +284,8 @@ class ElementList {
         elementList.add(indium)
         elementList.add(thallium)
         elementList.add(nihonium)
+        elementList.add(none)
+        elementList.add(holmium)
 
         elementList.add(none)
         elementList.add(carbon)
@@ -228,6 +294,8 @@ class ElementList {
         elementList.add(tin)
         elementList.add(lead)
         elementList.add(flerovium)
+        elementList.add(none)
+        elementList.add(erbium)
 
         elementList.add(none)
         elementList.add(nitrogen)
@@ -236,6 +304,8 @@ class ElementList {
         elementList.add(antimony)
         elementList.add(bismuth)
         elementList.add(moscovium)
+        elementList.add(none)
+        elementList.add(thulium)
 
         elementList.add(none)
         elementList.add(oxygen)
@@ -244,6 +314,8 @@ class ElementList {
         elementList.add(tellurium)
         elementList.add(polonium)
         elementList.add(livermorium)
+        elementList.add(none)
+        elementList.add(ytterbium)
 
         elementList.add(none)
         elementList.add(fluorine)
@@ -252,6 +324,8 @@ class ElementList {
         elementList.add(iodine)
         elementList.add(astatine)
         elementList.add(tennessine)
+        elementList.add(none)
+        elementList.add(lutetium)
 
         elementList.add(helium)
         elementList.add(neon)
@@ -260,6 +334,7 @@ class ElementList {
         elementList.add(xenon)
         elementList.add(radon)
         elementList.add(oganesson)
+        elementList.add(none)
 
         return elementList
     }
