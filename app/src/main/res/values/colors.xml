@@ -7,16 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dark_background">#212121</color>
+    <color name="light_background">#37474f</color>
     <!--element-type-->
-    <color name="ametal">#FFEB3B</color>
-    <color name="alkali_metal">#FF0000</color>
-    <color name="toprak_alkali">#0000FF</color>
-    <color name="yari_metal">#E91E63</color>
-    <color name="gecis_metalleri">#DAFF5800</color>
-    <color name="halojenler">#1EC832</color>
-    <color name="soygazlar">#673AB7</color>
-    <color name="lantanitler">#F44336</color>
-    <color name="aktinitler">#388C3B</color>
-    <color name="none">#FFFFFF</color>
+    <color name="non_metal">#009688</color>
+    <color name="alkali_metal">#B2DF8787</color>
+    <color name="alkaline_earth_metal">#DA0606</color>
+    <color name="metaloid">#CDDC39</color>
+    <color name="transition_metal">#DAFF5800</color>
+    <color name="metal">#03F407</color>
+    <color name="halogen">#5DA0D3</color>
+    <color name="noble_gas">#1341E6</color>
+    <color name="lanthanide">#5535AE</color>
+    <color name="actinide">#C88BD8</color>
+    <color name="none">#212121</color>
 
 </resources>

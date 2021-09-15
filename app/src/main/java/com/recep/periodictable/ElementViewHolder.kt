@@ -2,7 +2,6 @@ package com.recep.periodictable
 
 import android.view.View
 import android.widget.FrameLayout
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.recep.periodictable.model.ElementModel
@@ -16,25 +15,26 @@ class ElementViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val elementType = itemView.findViewById<FrameLayout>(R.id.element_type)
 //        val elementContainer = itemView.findViewById<LinearLayout>(R.id.element_container)
 
-        if (element.atomNumber == 0) {
-            elementAtomNumber.visibility = View.GONE
-        }
+//        if (element.elementType == ElementType.NONE) {
+//            elementType.visibility = View.GONE
+//        }
 
-        elementAtomNumber.text = element.atomNumber.toString()
+        elementAtomNumber.text = element.atomNumber
         elementSymbol.text = element.symbol
         elementName.text = element.name
 
         elementType.setBackgroundResource(
             when (element.elementType) {
-                ElementType.AMETAL -> R.color.ametal
                 ElementType.ALKALI_METAL -> R.color.alkali_metal
-                ElementType.TOPRAK_ALKALI_METAL -> R.color.toprak_alkali
-                ElementType.YARI_METAL -> R.color.yari_metal
-                ElementType.GECIS_METALLERI -> R.color.gecis_metalleri
-                ElementType.HALOJENLER -> R.color.halojenler
-                ElementType.SOYGAZ -> R.color.soygazlar
-                ElementType.LANTANITLER -> R.color.lantanitler
-                ElementType.AKTINITLER -> R.color.aktinitler
+                ElementType.ALKALINE_EARTH_METAL -> R.color.alkaline_earth_metal
+                ElementType.TRANSITION_METAL -> R.color.transition_metal
+                ElementType.METAL -> R.color.metal
+                ElementType.METALOID -> R.color.metaloid
+                ElementType.NON_METAL -> R.color.non_metal
+                ElementType.HALOGEN -> R.color.halogen
+                ElementType.NOBLE_GAS -> R.color.noble_gas
+                ElementType.LANTHANIDE -> R.color.lanthanide
+                ElementType.ACTINIDE -> R.color.actinide
                 else -> R.color.none
             }
         )
