@@ -11,7 +11,10 @@ class ElementAdapter(private val elementList: List<ElementModel>, private val su
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ElementViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val itemView = inflater.inflate(R.layout.adapter_item_element, parent, false)
-        return ElementViewHolder(itemView, supportFragmentManager)
+
+        val model = elementList
+
+        return ElementViewHolder(itemView, supportFragmentManager, model)
     }
 
     override fun onBindViewHolder(holder: ElementViewHolder, position: Int) {

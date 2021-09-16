@@ -1,10 +1,8 @@
 package com.recep.periodictable.recycleradapter
 
-import android.os.Bundle
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.recep.periodictable.R
@@ -12,16 +10,24 @@ import com.recep.periodictable.model.ElementModel
 import com.recep.periodictable.model.ElementType
 import com.recep.periodictable.ui.ElementDialogFragment
 
-class ElementViewHolder(itemView: View, private val dialog: FragmentManager) : RecyclerView.ViewHolder(itemView) {
+
+class ElementViewHolder(itemView: View, private val dialog: FragmentManager, model: List<ElementModel>) :
+    RecyclerView.ViewHolder(itemView) {
     init {
         itemView.setOnClickListener {
-            val position: Int = adapterPosition
-            Toast.makeText(itemView.context, "Clicked #${position} item", Toast.LENGTH_SHORT).show()
-
-            val elementDialogFragment = ElementDialogFragment()
-            elementDialogFragment.show(dialog, "Element Dialog")
-
+            createDialog(model)
         }
+    }
+
+    private fun createDialog(model: List<ElementModel>) {
+        val position: Int = adapterPosition
+        val elementDialogFragment = ElementDialogFragment.newInstance(
+            model[position].symbol,
+            model[position].name,
+            model[position].atomNumber,
+            model[position].radioactive
+        )
+        elementDialogFragment.show(dialog, "Element Dialog")
     }
 
     fun bind(element: ElementModel) {
@@ -30,7 +36,6 @@ class ElementViewHolder(itemView: View, private val dialog: FragmentManager) : R
         val elementName = itemView.findViewById<TextView>(R.id.textView_name)
         val elementType = itemView.findViewById<FrameLayout>(R.id.element_type)
         val beautification = itemView.findViewById<FrameLayout>(R.id.beautification)
-        val radioactivity = itemView.findViewById<FrameLayout>(R.id.radioactivity)
 
         elementAtomNumber.text = element.atomNumber
         elementSymbol.text = element.symbol
@@ -78,17 +83,12 @@ class ElementViewHolder(itemView: View, private val dialog: FragmentManager) : R
         )
     }
 
-    fun View.isRadioactive(element: ElementModel) {
-        if (element.radioactive) {
-            this.setBackgroundResource(R.drawable.radiation)
-        }
-    }
-
     private fun View.hideItem(element: ElementModel) {
         if (element.elementType == ElementType.NONE) {
             this.isClickable = false
             this.visibility = View.GONE
         }
     }
+
 
 }
