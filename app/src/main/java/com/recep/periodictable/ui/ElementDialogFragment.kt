@@ -9,10 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import com.bumptech.glide.GenericTransitionOptions
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.GlideException
-import com.bumptech.glide.request.RequestListener
 import com.recep.periodictable.R
-import java.util.*
 
 
 private const val ARG_PARAM1 = "param1"
