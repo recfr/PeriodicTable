@@ -26,7 +26,7 @@ object ElementList {
         val yttrium = ElementModel("Y", "Yttrium", "39", false, ElementType.TRANSITION_METAL)
 
         val lanthanide = ElementModel("", "Lanthanides", "57-71", false, ElementType.LANTHANIDE)
-        val actinide = ElementModel("", "Actinides", "89-103", false, ElementType.ACTINIDE)
+        val actinide = ElementModel("", "Actinides", "89-103", true, ElementType.ACTINIDE)
 
         val titanium = ElementModel("Ti", "Titanium", "22", false, ElementType.TRANSITION_METAL)
         val zirconium = ElementModel("Zr", "Zirconium", "40", false, ElementType.TRANSITION_METAL)
