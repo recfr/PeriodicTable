@@ -47,6 +47,7 @@ class ElementViewHolder(itemView: View, private val dialog: FragmentManager, mod
         beautification.backgroundConfig(element)
         elementType.setIndicator(element)
         itemView.hideItem(element)
+
     }
 
     private fun View.backgroundConfig(element: ElementModel) {

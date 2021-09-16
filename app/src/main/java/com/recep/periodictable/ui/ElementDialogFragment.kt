@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
+import com.bumptech.glide.Glide
 import com.recep.periodictable.R
+import java.util.*
 
 
 private const val ARG_PARAM1 = "param1"
@@ -43,6 +45,7 @@ class ElementDialogFragment : DialogFragment() {
         val nameDialog = view.findViewById<TextView>(R.id.textView_name_dialog)
         val atomNumberDialog = view.findViewById<TextView>(R.id.textView_atom_number_dialog)
         val radioactivity = view.findViewById<ImageView>(R.id.imageView_radioactivity)
+        val image = view.findViewById<ImageView>(R.id.imageView_element)
 
         symbolDialog.text = param1
         nameDialog.text = param2
@@ -52,6 +55,9 @@ class ElementDialogFragment : DialogFragment() {
         } else{
             radioactivity.visibility = View.INVISIBLE
         }
+
+        val url = "https://images-of-elements.com/" + (param2!!.lowercase()) + ".jpg"
+        Glide.with(this).load(url).into(image)
 
     }
 

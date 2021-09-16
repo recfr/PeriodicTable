@@ -26,7 +26,6 @@
         tools:text="Au" />
 
     <TextView
-        app:layout_constraintBottom_toBottomOf="@id/textView_symbol_dialog"
         android:id="@+id/textView_name_dialog"
         android:textSize="@dimen/text_size_element_name_dialog"
         android:layout_marginStart="10dp"
@@ -37,6 +36,7 @@
         app:layout_constraintStart_toEndOf="@id/textView_symbol_dialog"/>
 
     <ImageView
+        android:paddingBottom="10dp"
         android:id="@+id/imageView_element"
         android:layout_marginTop="10dp"
         tools:src="@drawable/ic_launcher_background"

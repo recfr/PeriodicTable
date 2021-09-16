@@ -185,7 +185,7 @@ object ElementList {
         elementList.add(actinide)
         elementList.add(none)
         elementList.add(lanthanum)
-        elementList.add(actinium )
+        elementList.add(actinium)
 
         elementList.add(none)
         elementList.add(none)
@@ -196,7 +196,7 @@ object ElementList {
         elementList.add(rutherfordium)
         elementList.add(none)
         elementList.add(cerium)
-        elementList.add(thorium )
+        elementList.add(thorium)
 
         elementList.add(none)
         elementList.add(none)
@@ -207,7 +207,7 @@ object ElementList {
         elementList.add(dubnium)
         elementList.add(none)
         elementList.add(praseodymium)
-        elementList.add(protactinium )
+        elementList.add(protactinium)
 
         elementList.add(none)
         elementList.add(none)
@@ -218,7 +218,7 @@ object ElementList {
         elementList.add(seaborgium)
         elementList.add(none)
         elementList.add(neodymium)
-        elementList.add(uranium )
+        elementList.add(uranium)
 
         elementList.add(none)
         elementList.add(none)
@@ -229,7 +229,7 @@ object ElementList {
         elementList.add(bohrium)
         elementList.add(none)
         elementList.add(promethium)
-        elementList.add(neptunium )
+        elementList.add(neptunium)
 
         elementList.add(none)
         elementList.add(none)
@@ -240,7 +240,7 @@ object ElementList {
         elementList.add(hassium)
         elementList.add(none)
         elementList.add(samarium)
-        elementList.add(plutonium )
+        elementList.add(plutonium)
 
         elementList.add(none)
         elementList.add(none)
@@ -251,7 +251,7 @@ object ElementList {
         elementList.add(meitnerium)
         elementList.add(none)
         elementList.add(europium)
-        elementList.add(americium )
+        elementList.add(americium)
 
         elementList.add(none)
         elementList.add(none)
@@ -262,7 +262,7 @@ object ElementList {
         elementList.add(darmstadtium)
         elementList.add(none)
         elementList.add(gadolinium)
-        elementList.add(curium )
+        elementList.add(curium)
 
         elementList.add(none)
         elementList.add(none)
@@ -273,7 +273,7 @@ object ElementList {
         elementList.add(roentgenium)
         elementList.add(none)
         elementList.add(terbium)
-        elementList.add(berkelium )
+        elementList.add(berkelium)
 
         elementList.add(none)
         elementList.add(none)
@@ -284,7 +284,7 @@ object ElementList {
         elementList.add(copernicium)
         elementList.add(none)
         elementList.add(dysprosium)
-        elementList.add(californium )
+        elementList.add(californium)
 
         elementList.add(none)
         elementList.add(boron)
@@ -295,7 +295,7 @@ object ElementList {
         elementList.add(nihonium)
         elementList.add(none)
         elementList.add(holmium)
-        elementList.add(einsteinium )
+        elementList.add(einsteinium)
 
         elementList.add(none)
         elementList.add(carbon)
@@ -306,7 +306,7 @@ object ElementList {
         elementList.add(flerovium)
         elementList.add(none)
         elementList.add(erbium)
-        elementList.add(fermium )
+        elementList.add(fermium)
 
         elementList.add(none)
         elementList.add(nitrogen)
@@ -317,7 +317,7 @@ object ElementList {
         elementList.add(moscovium)
         elementList.add(none)
         elementList.add(thulium)
-        elementList.add(mendelevium )
+        elementList.add(mendelevium)
 
         elementList.add(none)
         elementList.add(oxygen)
@@ -328,7 +328,7 @@ object ElementList {
         elementList.add(livermorium)
         elementList.add(none)
         elementList.add(ytterbium)
-        elementList.add(nobelium )
+        elementList.add(nobelium)
 
         elementList.add(none)
         elementList.add(fluorine)
@@ -339,7 +339,7 @@ object ElementList {
         elementList.add(tennessine)
         elementList.add(none)
         elementList.add(lutetium)
-        elementList.add(lawrencium )
+        elementList.add(lawrencium)
 
         elementList.add(helium)
         elementList.add(neon)
