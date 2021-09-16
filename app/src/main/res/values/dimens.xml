@@ -2,4 +2,5 @@
 <resources>
     <dimen name="symbol_text_size">24sp</dimen>
     <dimen name="name_textsize">12sp</dimen>
+    <dimen name="text_size_element_name_dialog">12sp</dimen>
 </resources>

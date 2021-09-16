@@ -26,8 +26,9 @@
         tools:text="Au" />
 
     <TextView
+        app:layout_constraintBottom_toBottomOf="@id/textView_symbol_dialog"
         android:id="@+id/textView_name_dialog"
-        android:textSize="@dimen/symbol_text_size"
+        android:textSize="@dimen/text_size_element_name_dialog"
         android:layout_marginStart="10dp"
         tools:text="Gold"
         android:layout_width="wrap_content"
