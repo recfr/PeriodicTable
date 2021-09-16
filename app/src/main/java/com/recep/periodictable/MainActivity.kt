@@ -5,9 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.recep.periodictable.recycleradapter.ElementAdapter
 import com.recep.periodictable.data.ElementList
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()  {
 //    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +19,18 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = ElementAdapter(ElementList().generateData())
+        recyclerView.adapter = ElementAdapter(ElementList.generateData(), supportFragmentManager)
+
         recyclerView.layoutManager = GridLayoutManager(this, 10, RecyclerView.HORIZONTAL, false)
+
+        // to prevent unwanted layout visibility access when scrolling
+        recyclerView.recycledViewPool.setMaxRecycledViews(0,0)
+
+//        recyclerView.itemAnimator
+
+//        val elementDialogFragment = ElementDialogFragment()
+//        elementDialogFragment.show(supportFragmentManager, "Element Dialog")
+
     }
+
 }

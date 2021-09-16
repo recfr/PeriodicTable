@@ -3,10 +3,10 @@ package com.recep.periodictable.data
 import com.recep.periodictable.model.ElementModel
 import com.recep.periodictable.model.ElementType
 
-class ElementList {
-    fun generateData(): List<ElementModel> {
-        val elementList = arrayListOf<ElementModel>()
+object ElementList {
+    private val elementList = arrayListOf<ElementModel>()
 
+    fun generateData(): List<ElementModel> {
         val none = ElementModel("", "", "", false, ElementType.NONE)
         val hydrogen = ElementModel("H", "Hydrogen", "1", false, ElementType.NON_METAL)
         val lithium = ElementModel("Li", "Lithium", "3", false, ElementType.ALKALI_METAL)
