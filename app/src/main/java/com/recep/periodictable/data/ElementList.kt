@@ -85,7 +85,7 @@ object ElementList {
         val germanium = ElementModel("Ge", "Germanium", "32", false, ElementType.METALOID)
         val tin = ElementModel("Sn", "Tin", "50", false, ElementType.METAL)
         val lead = ElementModel("Pb", "Lead", "82", false, ElementType.METAL)
-        val flerovium = ElementModel("Fl", "flerovium", "114", true, ElementType.METAL)
+        val flerovium = ElementModel("Fl", "Flerovium", "114", true, ElementType.METAL)
 
         val nitrogen = ElementModel("N", "Nitrogen", "7", false, ElementType.NON_METAL)
         val phosphorus = ElementModel("P", "Phosphorus", "15", false, ElementType.NON_METAL)
