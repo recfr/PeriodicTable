@@ -486,7 +486,8 @@ object ElementList {
             "247.07u", "[Rn]7s2 5f9"
         )
         val californium = ElementModel(
-            "Cf", "Californium", "98", true, ElementType.ACTINIDE, "251.079u", "[Rn]7s2 5f10"
+            "Cf", "Californium", "98", true, ElementType.ACTINIDE,
+            "251.079u", "[Rn]7s2 5f10"
         )
         val einsteinium = ElementModel(
             "Es", "Einsteinium", "99", true, ElementType.ACTINIDE,
