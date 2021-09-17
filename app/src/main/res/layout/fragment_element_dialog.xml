@@ -10,17 +10,17 @@
         android:background="@android:color/white">
 
         <TextView
-
+            android:textColor="@color/black"
             android:id="@+id/textView_atom_number_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="79" />
 
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/textView_symbol_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,6 +30,7 @@
             tools:text="Au" />
 
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/textView_name_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,6 +63,7 @@
             app:layout_constraintTop_toTopOf="@id/textView_atom_number_dialog" />
 
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/textView_atomic_mass_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,6 +82,7 @@
             tools:text="196.966u" />
 
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/textView_electron_config_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
