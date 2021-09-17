@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="320dp"
         android:layout_height="370dp"
-        android:padding="10dp"
-        android:background="@android:color/white">
+        android:background="@android:color/white"
+        android:padding="10dp">
 
         <TextView
-            android:textColor="@color/black"
             android:id="@+id/textView_atom_number_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="79" />
 
         <TextView
-            android:textColor="@color/black"
             android:id="@+id/textView_symbol_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:textSize="65sp"
             app:layout_constraintStart_toEndOf="@id/textView_atom_number_dialog"
             app:layout_constraintTop_toBottomOf="@id/textView_atom_number_dialog"
             tools:text="Au" />
 
         <TextView
-            android:textColor="@color/black"
             android:id="@+id/textView_name_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
             android:textSize="@dimen/text_size_element_name_dialog"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@id/textView_symbol_dialog"
-            app:layout_constraintStart_toStartOf="@id/textView_symbol_dialog"
+            app:layout_constraintBottom_toTopOf="@id/textView_atomic_mass_title"
+            app:layout_constraintStart_toStartOf="@id/textView_atomic_mass_title"
+            app:layout_constraintTop_toTopOf="parent"
             tools:text="Gold" />
 
         <ImageView
@@ -63,12 +63,12 @@
             app:layout_constraintTop_toTopOf="@id/textView_atom_number_dialog" />
 
         <TextView
-            android:textColor="@color/black"
             android:id="@+id/textView_atomic_mass_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="@string/atomic_mass"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/textView_symbol_dialog"
             app:layout_constraintTop_toTopOf="@id/textView_symbol_dialog" />
@@ -82,11 +82,11 @@
             tools:text="196.966u" />
 
         <TextView
-            android:textColor="@color/black"
             android:id="@+id/textView_electron_config_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/electron_configuration"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/textView_atomic_mass_title"
             app:layout_constraintTop_toBottomOf="@id/textView_atomic_mass_value" />
