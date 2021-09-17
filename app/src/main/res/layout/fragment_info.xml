@@ -7,7 +7,6 @@
         android:layout_height="wrap_content"
         tools:context=".ui.InfoFragment">
 
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +63,7 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:textColor="@color/noble_gas"
+                    android:textColor="@color/non_metal"
                     android:id="@+id/info_non_metal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -100,6 +99,5 @@
             </LinearLayout>
 
         </LinearLayout>
-
     </FrameLayout>
 </layout>

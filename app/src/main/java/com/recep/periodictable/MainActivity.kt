@@ -30,13 +30,19 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = ElementAdapter(ElementList.generateData(), supportFragmentManager)
-        recyclerView.layoutManager = GridLayoutManager(this, 10, RecyclerView.HORIZONTAL, false)
+//        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        binding.recyclerView.setHasFixedSize(true)
+        binding.recyclerView.adapter = ElementAdapter(ElementList.generateData(), supportFragmentManager)
+        binding.recyclerView.layoutManager = GridLayoutManager(this, 10, RecyclerView.HORIZONTAL, false)
         // to prevent unwanted layout visibility access when scrolling
-        recyclerView.recycledViewPool.setMaxRecycledViews(0, 0)
+        binding.recyclerView.recycledViewPool.setMaxRecycledViews(0, 0)
     }
 
+    override fun onBackPressed() {
+        binding.recyclerView.removeAllViews()
+        binding.recyclerView.removeAllViewsInLayout()
+        super.onBackPressed()
+
+    }
 
 }
