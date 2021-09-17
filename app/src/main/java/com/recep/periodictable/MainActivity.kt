@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-//        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         binding.recyclerView.setHasFixedSize(true)
         binding.recyclerView.adapter = ElementAdapter(ElementList.generateData(), supportFragmentManager)
         binding.recyclerView.layoutManager = GridLayoutManager(this, 10, RecyclerView.HORIZONTAL, false)
