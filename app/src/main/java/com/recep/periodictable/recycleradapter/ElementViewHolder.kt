@@ -20,14 +20,13 @@ class ElementViewHolder(itemView: View, private val dialog: FragmentManager, mod
     }
 
     private fun createDialog(model: List<ElementModel>) {
-        val position: Int = adapterPosition
         val elementDialogFragment = ElementDialogFragment.newInstance(
-            model[position].symbol,
-            model[position].name,
-            model[position].atomNumber,
-            model[position].radioactive,
-            model[position].atomicMass,
-            model[position].electronConfig
+            model[adapterPosition].symbol,
+            model[adapterPosition].name,
+            model[adapterPosition].atomNumber,
+            model[adapterPosition].radioactive,
+            model[adapterPosition].atomicMass,
+            model[adapterPosition].electronConfig
         )
         elementDialogFragment.show(
             dialog.beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out),

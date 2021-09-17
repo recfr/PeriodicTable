@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="element"
+            type="com.recep.periodictable.model.ElementModel" />
+    </data>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="65dp"
@@ -56,3 +62,4 @@
         android:layout_height="63dp" />
 
 </FrameLayout>
+</layout>

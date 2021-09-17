@@ -36,4 +36,5 @@ class MainActivity : AppCompatActivity() {
         // to prevent unwanted layout visibility access when scrolling
         binding.recyclerView.recycledViewPool.setMaxRecycledViews(0, 0)
     }
+
 }
