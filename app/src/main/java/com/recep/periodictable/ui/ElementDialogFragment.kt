@@ -59,11 +59,13 @@ class ElementDialogFragment : DialogFragment() {
         binding.textViewAtomicMassValue.text = param5
         binding.textViewElectronConfigValue.text = param6
 
-        if (param4 == true) {
-            binding.imageViewRadioactivity.visibility = View.VISIBLE
-        } else {
-            binding.imageViewRadioactivity.visibility = View.INVISIBLE
-        }
+//        if (param4 == true) {
+//            binding.imageViewRadioactivity.visibility = View.VISIBLE
+//        } else {
+//            binding.imageViewRadioactivity.visibility = View.INVISIBLE
+//        }
+
+        binding.imageViewRadioactivity.visibility = if (param4==true) View.VISIBLE else View.INVISIBLE
 
         Glide
             .with(this)
