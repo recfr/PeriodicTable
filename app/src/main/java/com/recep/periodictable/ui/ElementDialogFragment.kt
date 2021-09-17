@@ -4,8 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.fragment.app.DialogFragment
 import com.bumptech.glide.GenericTransitionOptions
@@ -44,7 +42,7 @@ class ElementDialogFragment : DialogFragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentElementDialogBinding.inflate(inflater, container, false)
         return binding.root
     }

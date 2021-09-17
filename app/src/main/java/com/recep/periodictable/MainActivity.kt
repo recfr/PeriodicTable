@@ -1,7 +1,6 @@
 package com.recep.periodictable
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
@@ -13,7 +12,7 @@ import com.recep.periodictable.recycleradapter.ElementAdapter
 import com.recep.periodictable.ui.InfoFragment
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
@@ -32,9 +31,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.recyclerView.setHasFixedSize(true)
         binding.recyclerView.adapter = ElementAdapter(ElementList.generateData(), supportFragmentManager)
-        binding.recyclerView.layoutManager = GridLayoutManager(this, 10, RecyclerView.HORIZONTAL, false)
+        binding.recyclerView.layoutManager = GridLayoutManager(
+            this, 10, RecyclerView.HORIZONTAL, false)
         // to prevent unwanted layout visibility access when scrolling
         binding.recyclerView.recycledViewPool.setMaxRecycledViews(0, 0)
     }
-
 }

@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:padding="2dp"
         android:textColor="@android:color/white"
-        tools:textColor="@android:color/black"
         android:textSize="@dimen/name_text_size"
-        tools:text="1" />
+        tools:text="1"
+        tools:textColor="@android:color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,9 +27,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
-            tools:textColor="@android:color/black"
             android:textSize="@dimen/symbol_text_size"
-            tools:text="H" />
+            tools:text="H"
+            tools:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/textView_name"
@@ -38,9 +38,9 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@android:color/white"
-            tools:textColor="@android:color/black"
             android:textSize="@dimen/name_text_size"
-            tools:text="Hydrogen" />
+            tools:text="Hydrogen"
+            tools:textColor="@android:color/black" />
 
         <FrameLayout
             android:id="@+id/element_type"
@@ -54,11 +54,5 @@
         android:id="@+id/beautification"
         android:layout_width="63dp"
         android:layout_height="63dp" />
-
-    <FrameLayout
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="0dp" />
 
 </FrameLayout>
