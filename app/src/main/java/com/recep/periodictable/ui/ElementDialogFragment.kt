@@ -56,9 +56,9 @@ class ElementDialogFragment : DialogFragment() {
         binding.textViewSymbolDialog.text = param1
         binding.textViewNameDialog.text = param2
         binding.textViewAtomNumberDialog.text = param3
+        binding.imageViewRadioactivity.visibility = if (param4==true) View.VISIBLE else View.INVISIBLE
         binding.textViewAtomicMassValue.text = param5
         binding.textViewElectronConfigValue.text = param6
-        binding.imageViewRadioactivity.visibility = if (param4==true) View.VISIBLE else View.INVISIBLE
 
         Glide
             .with(this)
