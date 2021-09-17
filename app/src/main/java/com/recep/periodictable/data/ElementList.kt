@@ -1,7 +1,7 @@
 package com.recep.periodictable.data
 
 import com.recep.periodictable.model.ElementModel
-import com.recep.periodictable.model.ElementType
+import com.recep.periodictable.enum.ElementType
 
 object ElementList {
     private val elementList = arrayListOf<ElementModel>()

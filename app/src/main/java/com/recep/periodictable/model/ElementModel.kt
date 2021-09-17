@@ -1,5 +1,7 @@
 package com.recep.periodictable.model
 
+import com.recep.periodictable.enum.ElementType
+
 data class ElementModel(
     val symbol: String,
     val name: String,
@@ -9,17 +11,3 @@ data class ElementModel(
     val atomicMass: String = "",
     val electronConfig: String = ""
 )
-
-enum class ElementType {
-    ALKALI_METAL,
-    ALKALINE_EARTH_METAL,
-    TRANSITION_METAL,
-    METAL,
-    METALOID,
-    NON_METAL,
-    HALOGEN,
-    NOBLE_GAS,
-    LANTHANIDE,
-    ACTINIDE,
-    NONE
-}

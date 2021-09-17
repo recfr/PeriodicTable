@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.recep.periodictable.R
 import com.recep.periodictable.model.ElementModel
-import com.recep.periodictable.model.ElementType
+import com.recep.periodictable.enum.ElementType
 import com.recep.periodictable.ui.ElementDialogFragment
 
 
