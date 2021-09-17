@@ -37,11 +37,4 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.recycledViewPool.setMaxRecycledViews(0, 0)
     }
 
-    override fun onBackPressed() {
-        binding.recyclerView.removeAllViews()
-        binding.recyclerView.removeAllViewsInLayout()
-        super.onBackPressed()
-
-    }
-
 }
