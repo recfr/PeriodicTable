@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".ui.InfoFragment">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:textColor="@color/alkali_metal"
+                    android:id="@+id/info_alkali_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="ALKALI_METAL" />
+
+                <TextView
+                    android:textColor="@color/alkaline_earth_metal"
+                    android:id="@+id/info_alkaline_earth_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="ALKALINE_EARTH_METAL" />
+
+                <TextView
+                    android:textColor="@color/transition_metal"
+                    android:id="@+id/info_transition_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="TRANSITION_METAL" />
+
+                <TextView
+                    android:textColor="@color/metal"
+                    android:id="@+id/info_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="METAL" />
+
+                <TextView
+                    android:textColor="@color/metaloid"
+                    android:id="@+id/info_metaloid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="METALOID" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:textColor="@color/noble_gas"
+                    android:id="@+id/info_non_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="NON_METAL" />
+
+                <TextView
+                    android:textColor="@color/halogen"
+                    android:id="@+id/info_halogen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="HALOGEN" />
+
+                <TextView
+                    android:textColor="@color/noble_gas"
+                    android:id="@+id/info_noble_gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="NOBLE_GAS" />
+
+                <TextView
+                    android:textColor="@color/lanthanide"
+                    android:id="@+id/info_lanthanide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="LANTHANIDE" />
+
+                <TextView
+                    android:textColor="@color/actinide"
+                    android:id="@+id/info_actinide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="ACTINIDE" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
