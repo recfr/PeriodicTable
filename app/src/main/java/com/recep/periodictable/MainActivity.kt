@@ -20,13 +20,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-//        setContentView(R.layout.activity_main)
         setSupportActionBar(binding.myToolbar)
 
         binding.imageViewInfo.setOnClickListener {
-//            Toast.makeText(this, "Info Clicked", Toast.LENGTH_SHORT).show()
             val infoFragment = InfoFragment()
-
             infoFragment.show(
                 supportFragmentManager.beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out),
                 "Info Dialog"
