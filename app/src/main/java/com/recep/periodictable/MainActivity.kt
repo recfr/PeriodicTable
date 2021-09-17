@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager.beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out),
                 "Info Dialog"
             )
-
         }
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
