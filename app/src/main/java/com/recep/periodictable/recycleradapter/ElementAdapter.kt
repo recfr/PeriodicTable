@@ -7,14 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.recep.periodictable.R
 import com.recep.periodictable.model.ElementModel
 
-class ElementAdapter(private val elementList: List<ElementModel>, private val supportFragmentManager: FragmentManager) : RecyclerView.Adapter<ElementViewHolder>() {
+class ElementAdapter(private val elementList: List<ElementModel>, private val supportFragmentManager: FragmentManager) :
+    RecyclerView.Adapter<ElementViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ElementViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val itemView = inflater.inflate(R.layout.adapter_item_element, parent, false)
-
-        val model = elementList
-
-        return ElementViewHolder(itemView, supportFragmentManager, model)
+        return ElementViewHolder(itemView, supportFragmentManager, elementList)
     }
 
     override fun onBindViewHolder(holder: ElementViewHolder, position: Int) {

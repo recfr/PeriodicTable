@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Periodic Table</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="element_image">element_image</string>
     <string name="radioactivity_image">radioactivity_image</string>
+    <string name="atomic_mass">Atomic Mass</string>
+    <string name="electron_configuration">Electron Configuration</string>
 </resources>

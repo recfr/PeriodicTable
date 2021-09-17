@@ -25,7 +25,9 @@ class ElementViewHolder(itemView: View, private val dialog: FragmentManager, mod
             model[position].symbol,
             model[position].name,
             model[position].atomNumber,
-            model[position].radioactive
+            model[position].radioactive,
+            model[position].atomicMass,
+            model[position].electronConfig
         )
         elementDialogFragment.show(
             dialog.beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out),

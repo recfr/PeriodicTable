@@ -1,58 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
-    android:layout_height="370dp">
+<layout>
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="320dp"
+        android:layout_height="370dp"
+        android:padding="10dp">
 
-        android:id="@+id/textView_atom_number_dialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:textSize="@dimen/symbol_text_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="79" />
+        <TextView
 
-    <TextView
-        android:id="@+id/textView_symbol_dialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="75sp"
-        app:layout_constraintStart_toEndOf="@id/textView_atom_number_dialog"
-        app:layout_constraintTop_toBottomOf="@id/textView_atom_number_dialog"
-        tools:text="Au" />
+            android:id="@+id/textView_atom_number_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/textView_name_dialog"
-        android:textSize="@dimen/text_size_element_name_dialog"
-        android:layout_marginStart="10dp"
-        tools:text="Gold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/textView_symbol_dialog"
-        app:layout_constraintStart_toEndOf="@id/textView_symbol_dialog"/>
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="79" />
 
-    <ImageView
-        android:paddingBottom="10dp"
-        android:id="@+id/imageView_element"
-        tools:src="@drawable/ic_launcher_background"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintTop_toBottomOf="@id/textView_symbol_dialog"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/element_image" />
+        <TextView
+            android:id="@+id/textView_symbol_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="65sp"
+            app:layout_constraintStart_toEndOf="@id/textView_atom_number_dialog"
+            app:layout_constraintTop_toBottomOf="@id/textView_atom_number_dialog"
+            tools:text="Au" />
 
-    <ImageView
-        android:src="@drawable/radiation"
-        android:id="@+id/imageView_radioactivity"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        app:layout_constraintStart_toEndOf="@id/imageView_element"
-        app:layout_constraintTop_toTopOf="@id/textView_atom_number_dialog"
-        android:contentDescription="@string/radioactivity_image" />
+        <TextView
+            android:id="@+id/textView_name_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/text_size_element_name_dialog"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/textView_symbol_dialog"
+            app:layout_constraintStart_toStartOf="@id/textView_symbol_dialog"
+            tools:text="Gold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageView_element"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/element_image"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_symbol_dialog"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/imageView_radioactivity"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/radioactivity_image"
+            android:src="@drawable/radiation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textView_atom_number_dialog" />
+
+        <TextView
+            android:id="@+id/textView_atomic_mass_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/atomic_mass"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/textView_symbol_dialog"
+            app:layout_constraintTop_toTopOf="@id/textView_symbol_dialog" />
+
+        <TextView
+            android:id="@+id/textView_atomic_mass_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textView_atomic_mass_title"
+            app:layout_constraintTop_toBottomOf="@id/textView_atomic_mass_title"
+            tools:text="196.966u" />
+
+        <TextView
+            android:id="@+id/textView_electron_config_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electron_configuration"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textView_atomic_mass_title"
+            app:layout_constraintTop_toBottomOf="@id/textView_atomic_mass_value" />
+
+        <TextView
+            android:id="@+id/textView_electron_config_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textView_electron_config_title"
+            app:layout_constraintTop_toBottomOf="@id/textView_electron_config_title"
+            tools:text="[Xe]6s1 4f14 5d10" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

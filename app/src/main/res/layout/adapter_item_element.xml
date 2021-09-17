@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/element_container"
     android:layout_width="65dp"
     android:layout_height="65dp"
     android:orientation="horizontal"
@@ -13,11 +12,11 @@
         android:layout_height="wrap_content"
         android:padding="2dp"
         android:textColor="@android:color/white"
+        tools:textColor="@android:color/black"
         android:textSize="@dimen/name_text_size"
         tools:text="1" />
 
     <LinearLayout
-        android:id="@+id/info_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -28,6 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
+            tools:textColor="@android:color/black"
             android:textSize="@dimen/symbol_text_size"
             tools:text="H" />
 
@@ -38,6 +38,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@android:color/white"
+            tools:textColor="@android:color/black"
             android:textSize="@dimen/name_text_size"
             tools:text="Hydrogen" />
 
@@ -55,7 +56,6 @@
         android:layout_height="63dp" />
 
     <FrameLayout
-        android:id="@+id/radioactivity"
         android:layout_width="10dp"
         android:layout_height="10dp"
         android:layout_marginStart="51dp"
