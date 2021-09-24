@@ -1,14 +1,12 @@
 package com.recep.periodictable.recycleradapter
 
 import android.view.View
-import android.widget.FrameLayout
-import android.widget.TextView
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.recep.periodictable.R
 import com.recep.periodictable.databinding.AdapterItemElementBinding
-import com.recep.periodictable.model.ElementModel
 import com.recep.periodictable.enum.ElementType
+import com.recep.periodictable.model.ElementModel
 import com.recep.periodictable.ui.ElementDialogFragment
 
 
